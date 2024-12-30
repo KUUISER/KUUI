@@ -1,0 +1,342 @@
+html{
+  background-image: url(../MetasysDashboard/Images/JCI\ Background.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 1500px;
+  background-position: auto;
+  margin: 10;
+
+}
+
+/*.jayhawk{
+  width: 150px;
+  position:fixed;
+  top: 575px; 
+  left: 0px;
+}
+*/
+/*------------Button Dropdowns--------------*/
+button{
+  border: 0;
+  line-height: auto;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 2px black;
+  border-radius: 10px;
+  background-color: #00539f;
+  box-shadow:
+    inset 4px 4px 6px rgba(255, 255, 255, 0.6),
+    inset -4px -4px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 6px rgba(106, 246, 12, 0.6);
+  width: 270px;
+  height: auto;
+}
+
+
+button:hover {
+  background-color: #8cc53f;
+  box-shadow: 5px 5px 6px rgba(15, 75, 204, 0.6);
+}
+
+/*DROPDOWN BOX*/
+.dropdown{
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  top: 0px;
+  left: 10px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  position: absolute;
+  display: block;
+  border-radius: 5px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  width: auto;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.tiles-grid{
+  background-color:#8cc53f;
+ background-position: center;
+
+}
+
+/*-------------------Collapse/Extend Employee Lookup-------------------*/
+
+body, .nav, .menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .nav {
+  position:fixed;
+  top: 36%;
+  left: -1%;
+  width:auto;
+  height:auto;
+  background-color: #00539f;
+  padding: 20px;
+  transition: 0.5s;
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
+  box-shadow: 5px 5px 6px rgba(106, 246, 12, 0.6);
+  }
+  
+  .menu {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  overflow:hidden;
+  transition: 0.5s;
+  background-color: #8cc53f;
+  border-radius: 10px;
+  }
+  
+  select{
+    width: 205px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 5px 6px rgba(15, 75, 204, 0.6);
+  }
+  .nav input:checked ~ .menu {
+  width: 300px;
+  }
+
+  textarea{
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 5px 5px 6px rgba(15, 75, 204, 0.6);
+  }
+
+  form{
+    width:200x;
+    background-color: #8cc53f;
+    border-radius:10px;
+  }
+
+  option{
+    Font-size: 20px;
+  }
+  
+  .nav input {
+  width: 40px;
+  height: 15px;
+  cursor: pointer;
+  opacity: 0;
+  }
+  
+  .nav span {
+  position: absolute;
+  left: 30px;
+  width: 30px;
+  height: 4px;
+  border-radius: 10px;
+  background-color:white;
+  pointer-events:none;
+  transition: 0.5s;
+  }
+  
+  .nav input:checked ~ span {
+  background-color: #8cc53f;
+  }
+  
+  .nav span:nth-child(2) {
+  transform: translateY(-8px);
+  }
+  
+  .nav input:checked ~ span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+  }
+  .nav span:nth-child(3) {
+  transform: translateY(8px);
+  }
+  
+  .nav input:checked ~ span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
+  }
+  
+/*-------------------Jayhawk-------------------*/
+ /*.bb, .bb::before, .bb::after {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    width: 220px;
+    height: 220px;
+  }
+    
+    .bb{
+    position:fixed;
+    top:500px;
+    bottom:0px;
+    left:60px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    margin: 15;
+    background: url("../MetasysDashboard/Images/Jayhawk.png") no-repeat 50%/70% transparent;
+    color: linear-gradient(30deg, #00539f, #8cc53f, white);
+    animation: animate 1.5s linear infinite;
+    }
+    .bb::before, .bb::after {
+    content: '';
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 8px 4px;
+    animation: clipMe 8s linear infinite;
+    }
+    .bb::before {
+    animation-delay: -4s;
+    }
+    .bb:hover::after, .bb:hover::before {
+    background-color:#00539f;
+    opacity: .5;
+    }
+    
+    @keyframes clipMe {
+    0%, 100% {
+    clip: rect(0px, 220px, 4px, 0px);
+    }
+    25% {
+    clip: rect(0px, 4px, 220px, 0px);
+    }
+    50% {
+    clip: rect(218px, 220px, 220px, 0px);
+    }
+    75% {
+    clip: rect(0px, 220px, 220px, 218px);
+    }
+ 
+  }*/
+
+/*-------------------Clock-------------------*/
+  .wrapper .display,
+.wrapper span {
+position: absolute;
+top: 30%;
+left: 75%;
+transform: translate(-50%, -50%);
+
+}
+
+.wrapper .display #time {
+line-height: 85px;
+font-size: 115px;
+font-weight: 600px;
+letter-spacing: 5px;
+background: linear-gradient(135deg, #00539f, #8cc53f);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: animate 2.5s linear infinite;
+}
+
+@keyframes animate {
+100% {
+filter: hue-rotate(360deg);
+}
+}
+
+.wrapper span:last-child {
+filter: blur(20px);
+}
+
+/*-------------------Side Links-------------------*/
+.links {
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 75%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+  
+  .links .fl-fl {
+  background: #00539f;
+  border-radius: 0 15px 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 191px;
+  position: relative;
+  margin: 8px 0;
+  left: -157px;
+  z-index: 1000;
+  text-align: right;
+  font: normal normal 10px Arial;
+  -webkit-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  -ms-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 375ms cubic-bezier(0.86, 0, 0.07, 1);
+  box-shadow:
+  inset 4px 4px 6px rgba(255, 255, 255, 0.6),
+  inset -4px -4px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 6px rgba(106, 246, 12, 0.6);
+  }
+  
+  
+  
+  .links .fl-fl:hover {
+  left: 0;
+  background-color:#8cc53f;
+  box-shadow: 5px 5px 6px rgba(15, 75, 204, 0.6);
+  }
+  
+  .links .fl-fl:hover span, .links .fl-fl:hover .fa {
+  color: white ;
+  }
+  
+  .links .fl-fl a {
+  text-decoration: none;
+  }
+  
+  .links .fl-fl a .fa {
+  transition: all 700ms ease 375ms;
+  float: right;
+  font-size: 25px;
+  color: white;
+  padding: 10px 0;
+  width: 40px;
+  margin-right: 5px;
+  }
+  
+  .links .fl-fl a .fa.fa-google-plus {
+  padding: 12px 0;
+  font-size: 18px;
+  margin-right: -1px;
+  }
+  
+  .links .fl-fl a span {
+  transition: all 700ms ease 427ms;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+  }
