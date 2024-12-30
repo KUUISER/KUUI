@@ -1,0 +1,164 @@
+<!--KU HVAC Shop Dashboard Version 1 (HVAC Tech Pack)-->
+
+<!DOCTYPE html>
+<script 
+    src="script.js">
+</script> 
+
+<html>
+    <head>
+        <title>
+            HVAC Shop
+        </title>
+        <link  
+        href="style.css" type="text/css"
+        rel="stylesheet"/>
+    </head>
+<header>
+    
+<!--Navigation Links-->
+    <na>
+        <div class="dropdownlist">
+            <div class="dropdown" id="newserver">
+                <button class="dropbtn" draggable="true">New Server</button>
+                <div class="dropdown-content">
+                <a href="https://10.101.136.50/UI" target="_blank"><button>UI</button></a>
+                <a href="https://10.101.136.50/UI/alarms" target="_blank"><button>Alarms</button></a>
+                <a href="jcilaunchersmp://10.101.136.50" target="_blank"><button>SMP</button></a>
+                </div>
+            </div>
+        
+            <div class="dropdown" id="oldserver">
+                <button class="dropbtn" draggable="true">Old Server</button>
+                <div class="dropdown-content">
+                <a href="https://129.237.24.9/UI" target="_blank"><button>UI</button></a>
+                <a href="https://129.237.24.9/UI/alarms" target="_blank"><button>Alarms</button></a>
+                <a href="jcilaunchersmp://129.237.24.9" target="_blank"><button>SMP</button></a>
+                </div>
+            </div>
+        
+            <div class="dropdown" id="sct">
+                <button class="dropbtn" draggable="true">System Configuration Tool</button>
+                <div class="dropdown-content">
+                <a href="jcilaunchersct://10.101.136.50" target="_blank"><button>BACnet SCT</button></a>
+                <a href="jcilaunchersct://129.237.24.9" target="_blank"><button>N2 SCT (129.237.24.9)</button></a>
+                <a href="jcilaunchersct://129.237.248.4" target="_blank"><button>N2 SCT (129.237.248.4)</button></a>
+                <a href="jcilaunchersct://localhost" target="_blank"><button>LOCALHOST SCT</button></a>
+                <a href="https://localhost/SCTPro/Dashboard" target="_blank"><button>LOCALHOST SCT PRO</button></a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="ku-links">
+                <button class="dropbtn" draggable="true">KU Links</button>
+                <div class="dropdown-content">
+
+                  <a href="https://maximo.ku.edu/maximo/webclient/login/login.jsp?appservauth=true" target="_blank">
+                    <button>Maximo</button></a>
+
+                  <a href="https://hr.ku.edu/psp/hrprd/?cmd=login" target="_blank">
+                    <button>KU HR/Pay</button></a>
+
+                  <a href="https://tsc.ku.edu/carruth-oleary-team" target="_blank">
+                    <button>KU IT Helpdesk</button></a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="information">
+                <button class="dropbtn" draggable="true">Help/Information</button>
+
+                <div class="dropdown-content">
+
+                    <a href="https://docs.johnsoncontrols.com/bas/home" target="_blank">
+                    <button>JCI OpenBlue</button></a>
+                  
+                    <a href="../MetasysDashboard/Training/FAN-410/FAN-410/HVAC-BACnet Installation Quick Reference Handbook (FAN 410).pdf" target="_blank">
+                        <button>JCI FAN410</button></a>
+
+                    <a href="../MetasysDashboard/Training/CCT_Lit/webhelp_out/index.html" target="_blank">
+                           <button>Controller Tool Help</button></a>
+                </div>
+            </div>
+        </div>
+        <!--Collapse/Expand Employee Lookup-->
+    <div class="nav">
+        <input type="checkbox">
+            <span></span>
+            <span></span>
+                <div class="menu">
+                    <form name="messageForm">
+                    <p><select name="messagePick" OnChange="messageReveal()">
+                    <option>Select Employee</option>
+                    <option>Aaron Howard</option> </option>
+                    <option>Andy Gonering</option>
+                    <option>Anthony Brown</option>
+                    <option>Ben Brungardt</option>
+                    <option>Brian Gilges</option>
+                    <option>Cary Kessler</option>
+                    <option>Chris Mannell</option> </option>
+                    <option>Dave Henricks</option>
+                    <option>Dustin Porter</option>
+                    <option>Eugene Normandin</option>
+                    <option>Josh Gustafson</option>
+                    <option>Josh Wheeler</option>
+                    <option>Kasey Minihan</option> </option>
+                    <option>Keith McNeil</option>
+                    <option>Lawrence Chapman</option>
+                    <option>Luke Sapp</option>
+                    <option>Matt DiBello</option>
+                    <option>Mike Behzadi</option>
+                    <option>Riley Childers</option> </option>
+                    <option>Russell Pearson</option>
+                    <option>Tom Bryce</option>
+                    <option>Will Allen</option>
+                    </select> <br>
+                    </p>
+                    <p><textarea name="messageField" rows="1" cols="10" wrap="soft" readonly></textarea></p>
+                    </form>
+                    <!--Collapse/Expand Employee Lookup End-->
+                </div>
+    </div>
+    </na>
+<!--Navigation Links END-->
+</header>
+
+<body> 
+    <!--Clock-->
+    <a href="https://hr.ku.edu" target="_blank"><div class="bb"></div>
+    </a>  
+    <div class="wrapper">
+        <a href="https://hr.ku.edu" target="_blank"><div class="display">
+        <div id="time"></div>
+        </div>
+        <span></span>
+        <span></span>
+        </div>
+        </a>
+        <!-- Follow Links -->
+<div class="links">
+    <div class="fl-fl" id="link1">
+    <a href="#" target="_blank">
+    <span>Other Pens</span>
+    <i class="fa fa-codepen"></i>
+    </a>
+    </div>
+    <div class="fl-fl" id="link2">
+    <a href="#" target="_blank">
+    <span>Check Out Repos</span>
+    <i class="fa fa-github"></i>
+    </a>
+    </div>
+    <div class="fl-fl" id="link3">
+    <a href="#" target="_blank">
+    <span>Follow Pages</span>
+    <i class="fa fa-google-plus"></i>
+    </a>
+    </div>
+    <div class="fl-fl" id="link4">
+    <a href="#" target="_blank">
+    <span>Follow Page</span>
+    <i class="fa fa-facebook-square"></i>
+    </a>
+    </div>
+</div>
+</body>
+</html>
